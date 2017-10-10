@@ -1,0 +1,154 @@
+@font-face {
+	font-family: 'Moon';
+	src: url("https://cdn.glitch.com/080ed6fe-1af8-4eeb-85e5-ae603891d211/Moon%20Bold.otf");
+}
+
+body {
+	background: #1d1e2b;
+	color: white;
+}
+
+.container {
+	max-width: 800px;
+}
+
+.us {
+  height: 20rem;
+}
+
+.nav {
+  padding: 0;
+  height: 10vh;
+}
+a:hover {
+  color: white;
+}
+.nav-item {
+  width: 4rem;
+  text-align: center;
+}
+.nav-item a {
+	color: white;
+	text-decoration: none;
+	font-family: "Consolas", "Monaco", "Menlo", monospace;
+}
+
+.nav-item a:hover {
+	cursor: pointer;
+	color: white;
+	border: none;
+}
+
+.hero {
+	color: white;
+	height: 80vh;
+  margin-top: 10vh;
+}
+
+.hero div {
+	margin-bottom: 5rem;
+}
+
+.hero h3 {
+	font-family: "Moon", sans-serif;
+	font-size: 5rem;
+	margin-bottom: 0;
+}
+
+.hero h5 {
+	margin-top: 1rem;
+	margin-bottom: 0;
+	font-weight: 200;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 200;
+}
+
+.header {
+	font-weight: 200;
+}
+
+.content {
+	font-size: 1.8rem;
+}
+
+.center {
+  flex-wrap: wrap;
+}
+
+/* === Footer === */
+footer {
+	margin: 50px;
+}
+
+#footer-link {
+	font-size: 16px;
+	color: white;
+	text-decoration: none;
+}
+
+#footer-made,
+#footer-name,
+#footer-logo {
+	margin-top: 0;
+	margin-bottom: 0;
+	vertical-align: middle;
+}
+
+#footer-name {
+	font-weight: 700;
+}
+
+#footer-logo {
+	height: 25px;
+	width: 25px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 3px;
+}
+
+.profile-pic {
+	height: 24rem;
+}
+
+.member-name {
+	margin-top: 0;
+}
+
+#background_canvas {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+/* Nav select bar */
+#nav-selection {
+  width: 0;
+	position: absolute;
+	left: calc( 50% - 8rem );
+	bottom: calc( 5vh - 1.25em );
+	margin-top: 0;
+	margin-bottom: 0;
+	background: #ffffff;
+	transition: left 0.5s;
+	padding-bottom: 0;
+  padding-top: 2px;
+}
+
+#nav-selection[page="about"] {
+	left: calc( 50% - 6rem );
+}
+
+#nav-selection[page="team"] {
+	left: calc( 50% + 2rem );
+}
