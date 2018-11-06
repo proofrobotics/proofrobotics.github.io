@@ -6,26 +6,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Proof Robotics</title>
-  <link rel="shortcut icon" href="https://cdn.glitch.com/080ed6fe-1af8-4eeb-85e5-ae603891d211/logo.png?1540344871087"  type="image/x-icon" />
+	<link rel="shortcut icon" href="assets/logo.png"  type="image/x-icon" />
 	<link rel="stylesheet" href="https://unpkg.com/wingcss" />
-  <link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="style.css" />
 </head>
 
 <body id="root">
 	<canvas id="background_canvas"></canvas>
-  
 	<script id="view" type="text/mvl">
     <section class="hero container center text-center">
 	  	<div>
-	  		<a href="https://proofschool.org"><img src="https://cdn.glitch.com/080ed6fe-1af8-4eeb-85e5-ae603891d211/logo.png?1540344871087" alt="Proof Logo" height="128"/></a>
+	  		<a href="https://proofschool.org"><img src="assets/logo.png" alt="Proof Logo" height="128"/></a>
 	  		<h3>Proof Robotics</h3>
 	  		<h5>A San Fransisco based team.</h5>
 	  	</div>
 	  </section>
     <div class="nav horizontal-align">
-	  		<div class="nav-item"><a @click={page("about")}>About</a></div>
-	  		<div class="nav-item"><a @click={page("team")}>Team</a></div>
-        <span class="nav-item" id="nav-selection"></span>
+	  	<div class="nav-item"><a @click={page("about")}>About</a></div>
+	  	<div class="nav-item"><a @click={page("team")}>Team</a></div>
+      <span class="nav-item" id="nav-selection"></span>
 	  </div>
 		<section If={v} id="about" class="container">
 			<h2 class="header">About</h2>
@@ -33,24 +32,18 @@
 				<div class="row">
 					<div class="col">
 						<p class="content">
-              <a href="https://proofschool.org">Proof School</a> offers a transformative liberal arts education 
-              to young people with an active curiosity and a passion for mathematics, equipping them to reason, 
-              communicate, and positively impact their world.
-            </p>
-            <p class="content">Our team consists of hardworking, persevering high-school students from Proof School—a private
-            6-12 school located in San Francisco, California, that specializes in liberal arts and mathematics. 
-            We enjoy participating in Zero Robotics because it inspires our creativity and fosters our love and
-            passion for programming. 
-            </p>
-            <p class="content">
-              People on our team have participated in a variety of different science and programming challenges
-              and competitions, ranging from USACO to Science Bowl to AMC to CodeFights to Zero Robotics.
-              We have also worked on a number of individual coding projects.
-            </p>  
+		  					<a href="https://proofschool.org">Proof School</a> offers a transformative liberal arts education to young people with an active curiosity and a passion for mathematics, equipping them to reason, communicate, and positively impact their world.
+						</p>
+						<p class="content">
+							Our team consists of hardworking, persevering high-school students from Proof School—a private 6-12 school located in San Francisco, California, that specializes in liberal arts and mathematics. We enjoy participating in Zero Robotics because it inspires our creativity and fosters our love and passion for programming. 
+						</p>
+						<p class="content">
+		  					People on our team have participated in a variety of different science and programming challenges and competitions, ranging from USACO to Science Bowl to AMC to CodeFights to Zero Robotics. We have also worked on a number of individual coding projects.
+		 				</p>  
 					</div>
 					<div class="col center">
-            <img src="https://cdn.glitch.com/080ed6fe-1af8-4eeb-85e5-ae603891d211/IMG_1704.jpg" alt="Us working" class="us" /> <br />
-            <img src="https://cdn.glitch.com/080ed6fe-1af8-4eeb-85e5-ae603891d211/IMG_0018.jpg" alt="Us working" class="us" />
+						<img src="assets/IMG_1704.jpg" alt="Us working" class="us" /> <br />
+						<img src="assets/IMG_0018.jpg" alt="Us working" class="us" />
 					</div>
 				</div>
 			</div>
@@ -70,11 +63,10 @@
 			</div>
 		</section>
 	</script>
-  <script src="https://unpkg.com/smoothscroll-polyfill"></script>
+	<script src="https://unpkg.com/smoothscroll-polyfill"></script>
 	<script src="https://unpkg.com/regl"></script>
 	<script src="https://unpkg.com/moon"></script>
-  <script src="shader.js"></script>
+	<script src="shader.js"></script>
 	<script src="team.js"></script>
 </body>
-
 </html>
